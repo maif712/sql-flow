@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  // base: "/sql-flow",
+  base: "/sql-flow/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
