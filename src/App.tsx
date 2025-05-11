@@ -1,4 +1,3 @@
-
 import { Toaster as Sonner } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -30,7 +29,7 @@ const App = () => (
 
       <TooltipProvider>
         <ThemedToasts />
-        <BrowserRouter>
+        <BrowserRouter basename="/sql-flow"> {/* Add basename */}
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
